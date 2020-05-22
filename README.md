@@ -8,12 +8,13 @@ Check the following files for information about the project-:
   
 # How to test the api?  
 1) clone the repository.
-2) Run command => sudo apt install mongodb (if not install)  
-3) Run command => sudo apt install nodejs (if not install)  
-4) Run command => sudo apt install npm  
-5) Now move to directory Basic phrases.  
-6) Run command => npm i mongodb -y  
-7) Run command => npm i express -y  
-8) Now to set-up sharding => Run command => sudo bash init-shard.sh  => you will messages telling the status.
-9) Now run => node server.js  => you will messages telling the status.
-10) To test go to this url => http://localhost:3000/Query1?country=Japan => you will see json result in your browser.
+2) Run command => echo '127.0.0.1 database.BasicPhrases.com' | sudo tee --append /etc/hosts  
+3) Run command => sudo apt install mongodb (if not install)   
+4) Run command => sudo apt install nodejs (if not install)   
+5) Run command => sudo apt install npm . (if not install)   
+6) Now move to directory Basic phrases-sharding.
+7) Run command => npm i mongodb -y or npm i mongodb  
+8) Run command => npm i express -y or npm i express  
+9) Now to set-up sharding => Run command => sudo bash init-shard.sh  => See the console messages for progress.
+10) Now run => node server.js  => See the console messages for progress.
+11) To test go to this url => http://localhost:3000/Query1?country=Japan => you will see json result in your browser.
